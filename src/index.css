@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .Button {
+    @apply border-solid border-2 rounded-md border-slate-900 bg-slate-900 p-1 text-slate-50 hover:bg-slate-700 hover:border-slate-800 w-24 disabled:bg-slate-700;
+  }
+  .Person {
+    @apply bg-slate-100 hover:bg-slate-200 text-xl p-1 m-0.5 border-solid border-2 rounded-sm border-slate-100 hover:border-slate-200;
+  }
+  .Test-Border{
+    @apply border-solid border-2 rounded-lg border-slate-900;
+  }
+}
