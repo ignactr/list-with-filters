@@ -38,7 +38,7 @@ function Add(props){
           <title>People List</title>
           <html className={props.mode === true ? 'dark bg-gray-800' : ''} />
         </Helmet>
-        <button onClick={()=> props.setMode(!props.mode)} className='hover:bg-slate-200 bg-slate-100 border-solid border-2 border-slate-100 hover:border-slate-200 rounded-md p-1 mt-2 ml-2 w-12 h-12 dark:bg-gray-600 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700'><img src={ props.mode === true ? sun : moon} alt="sun icon" /></button>
+        <button onClick={()=> props.setMode(!props.mode)} className='hover:bg-slate-200 bg-slate-100 border-solid border-2 border-slate-100 hover:border-slate-200 rounded-md p-1 mt-2 ml-2 dark:bg-gray-600 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700'><img className='w-11 h-11' src={ props.mode === true ? sun : moon} alt="sun icon" /></button>
       <div className="flex place-content-center">
         <div className="flex flex-col place-content-center">
           <form onSubmit={handleAdding}>

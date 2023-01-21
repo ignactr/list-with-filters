@@ -31,8 +31,8 @@ function App() {
           <title>People List</title>
           <html className={mode === true ? 'dark bg-gray-800 m-0' : 'm-0'} />
         </Helmet>
-        <button onClick={()=> setMode(!mode)} className='mt-2 hover:bg-slate-200 bg-slate-100 border-solid border-2 border-slate-100 hover:border-slate-200 rounded-md p-1 ml-2 w-12 h-12 dark:bg-gray-600 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700'><img src={ mode === true ? sun : moon} alt="sun icon" /></button>
-        <button onClick={()=> setDeleteMode(!deleteMode)} className={deleteMode === false ? 'mt-2 hover:bg-slate-300 bg-slate-100 border-solid border-2 border-slate-100 hover:border-slate-300 rounded-md p-1 ml-2 w-12 h-12 dark:bg-gray-600 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 hover:shadow-lg hover:shadow-red-800/50' : 'delete mt-2 hover:bg-red-500 bg-red-600 border-solid border-2 border-red-600 hover:border-red-500 rounded-md p-1 ml-2 w-12 h-12 hover:shadow-lg hover:shadow-red-900/50'}><img src={bin} alt="sun icon" /></button>
+        <button onClick={()=> setMode(!mode)} className='mt-2 hover:bg-slate-200 bg-slate-100 border-solid border-2 border-slate-100 hover:border-slate-200 rounded-md p-1 ml-2 dark:bg-gray-600 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700'><img className='w-11 h-11' src={ mode === true ? sun : moon} alt="sun icon" /></button>
+        <button onClick={()=> setDeleteMode(!deleteMode)} className={deleteMode === false ? 'mt-2 hover:bg-slate-300 bg-slate-100 border-solid border-2 border-slate-100 hover:border-slate-300 rounded-md p-1 ml-2 w-14 h-14 dark:bg-gray-600 dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 hover:shadow-lg hover:shadow-red-800/50' : 'delete mt-2 hover:bg-red-500 bg-red-600 border-solid border-2 border-red-600 hover:border-red-500 rounded-md p-1 ml-2 w-14 h-14 hover:shadow-lg hover:shadow-red-900/50'}><img src={bin} alt="sun icon" /></button>
         <div className="flex place-content-center">
           <div className="flex flex-col place-content-center"> 
             <div className="flex space-x-2 mb-3 mt-16">
