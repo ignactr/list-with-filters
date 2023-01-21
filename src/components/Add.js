@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import {Helmet} from "react-helmet";
 import sun from "../images/sun.png";
 import moon from "../images/moon.png"
-
+//function Add shows a form with three inputs and uses add function provided by parent component (App.js) 
 function Add(props){
     const [name, setName] = useState('');
     const [surname, setSurname] = useState('');

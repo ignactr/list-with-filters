@@ -1,3 +1,4 @@
+//function List maps People array of objects into buttons with data of one person. If deleteMode is on, clicking the button will delete data of that person
 function List(props) {
     const people= props.people;
     const filtered = people.filter(person =>{
