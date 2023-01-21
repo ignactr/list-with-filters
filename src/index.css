@@ -2,14 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+.delete{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
 @layer base {
   .Button {
     @apply border-solid border-2 rounded-md border-slate-900 bg-slate-900 p-1 text-slate-50 hover:bg-slate-700 hover:border-slate-800 w-24 disabled:bg-slate-700 dark:bg-gray-600 dark:hover:bg-gray-700 dark:disabled:bg-gray-700 dark:border-gray-600;
   }
   .Person {
-    @apply bg-slate-100 hover:bg-slate-200 text-xl p-1 m-0.5 border-solid border-2 rounded-sm border-slate-100 hover:border-slate-200 dark:bg-zinc-500 dark:text-slate-100 dark:hover:bg-zinc-600 dark:border-zinc-500 hover:dark:border-zinc-600;
+    @apply w-full bg-slate-100 disabled:hover:bg-slate-200 text-xl p-1 m-0.5 border-solid border-2 rounded-sm border-slate-100 disabled:hover:border-slate-200 dark:bg-zinc-500 dark:text-slate-100 disabled:dark:hover:bg-zinc-600 dark:border-zinc-500 disabled:hover:dark:border-zinc-600 hover:bg-red-300 hover:border-red-300 dark:hover:bg-red-700 dark:hover:border-red-700;
   }
   .Test-Border{
     @apply border-solid border-2 rounded-lg border-slate-900;
+  }
+  .Bottom-Button-1{
+    @apply border-solid border-2 mt-2 bg-red-700 text-slate-900 border-red-700 rounded-lg text-2xl hover:bg-red-600 hover:border-red-600 w-12 text-center py-1;
+  }
+  .Bottom-Button-2{
+    @apply border-solid border-2 mt-2 bg-slate-900 text-slate-50 border-slate-900 rounded-lg text-2xl hover:bg-slate-700 hover:border-slate-800 w-12 text-center py-1 dark:bg-gray-600 dark:hover:bg-gray-700;
   }
 }
