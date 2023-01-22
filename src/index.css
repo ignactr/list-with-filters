@@ -25,7 +25,7 @@
     @apply border-solid border-2 rounded-md border-slate-900 bg-slate-900 p-1 text-slate-50 hover:bg-slate-700 hover:border-slate-800 w-24 disabled:bg-slate-700 dark:bg-gray-600 dark:hover:bg-gray-700 dark:disabled:bg-gray-700 dark:border-gray-600;
   }
   .Person {
-    @apply w-full bg-slate-100 disabled:hover:bg-slate-200 text-xl p-1 m-0.5 border-solid border-2 rounded-sm border-slate-100 disabled:hover:border-slate-200 dark:bg-zinc-500 dark:text-slate-100 disabled:dark:hover:bg-zinc-600 dark:border-zinc-500 disabled:hover:dark:border-zinc-600 hover:bg-red-300 hover:border-red-300 dark:hover:bg-red-700 dark:hover:border-red-700;
+    @apply w-full bg-slate-100 disabled:hover:bg-slate-200 text-xl p-1 m-0.5 border-solid border-2 rounded-sm border-slate-100 disabled:hover:border-slate-200 dark:bg-zinc-500 dark:text-slate-100 disabled:dark:hover:bg-zinc-600 dark:border-zinc-500 disabled:hover:dark:border-zinc-600 hover:bg-red-300 hover:border-red-300 dark:hover:bg-red-700 dark:hover:border-red-700 hover:line-through disabled:hover:no-underline;
   }
   .Test-Border{
     @apply border-solid border-2 rounded-lg border-slate-900;
